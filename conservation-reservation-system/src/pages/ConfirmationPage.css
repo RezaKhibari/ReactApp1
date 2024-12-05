@@ -1,0 +1,13 @@
+.confirmation {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
