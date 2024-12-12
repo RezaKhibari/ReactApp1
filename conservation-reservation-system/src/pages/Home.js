@@ -25,6 +25,11 @@ const Home = () => {
           About the Areas
         </button>
       </div>
+      <li className="nav-item">
+  <Link className="nav-link" to="/notes">
+    Notes
+  </Link>
+</li>
       <div className="tab-content">
         {activeTab === 'reserve' && (
           <div className="reserve-tab">

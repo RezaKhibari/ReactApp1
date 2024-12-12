@@ -1,8 +1,7 @@
-import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
-import './ConfirmationPage.css';
+import React from "react";
+import { useLocation, Link } from "react-router-dom";
 
-const ConfirmationPage = () => {
+const ConfirmationPage = ({ notes }) => {
   const { state } = useLocation();
 
   if (!state) {
@@ -18,6 +17,7 @@ const ConfirmationPage = () => {
         <li><strong>Date:</strong> {state.date}</li>
         <li><strong>Time Slot:</strong> {state.timeSlot}</li>
       </ul>
+      <p>You have {notes.length} reservation notes.</p>
       <Link to="/" className="btn btn-primary">Back to Home</Link>
     </div>
   );
